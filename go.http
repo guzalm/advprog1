@@ -1,0 +1,27 @@
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+    "message": "Привет, сервер! Это JSON-данные из файла go.http."
+}
+
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+    "other_field": "This should result in an error"
+}
+
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+    "message": "Altered message"
+}
+
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+    "message": 12345
+}
